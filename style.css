@@ -1,0 +1,203 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    padding: 35px;
+    line-height: 1.6;
+}
+
+/* Main Heading Card */
+#main-header {
+    background: linear-gradient(135deg, #142d4e, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(30, 58, 95, 0.15);
+}
+
+#main-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Section Cards */
+.expense-section,
+.expenses-list {
+    background: #ffffff;
+    padding: 32px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+/* Section Headings */
+.expense-section h2,
+.expenses-list h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Input Fields */
+input,
+select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Input Focus */
+input:focus,
+select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Button Click */
+button:active {
+    transform: translateY(0);
+}
+
+/* Expense Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Table Header */
+thead {
+    background: #1e3a8a;
+    color: #ffffff;
+}
+
+th {
+    padding: 17px 15px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Table Data */
+td {
+    padding: 16px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+/* Alternating Rows */
+tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Table Hover */
+tbody tr:hover {
+    background: #dbeafe;
+    transition: background 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #main-header {
+        padding: 28px 15px;
+    }
+
+    #main-header h1 {
+        font-size: 23px;
+    }
+
+    .expense-section,
+    .expenses-list {
+        padding: 20px;
+    }
+
+    .expense-section h2,
+    .expenses-list h2 {
+        font-size: 19px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 10px 7px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
